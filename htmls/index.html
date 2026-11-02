@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LINKFORGE for Teachers · 조대부고 — Gemini로 수업용 웹페이지 만들기</title>
+<title>LINKFORGE for Teachers · 광주제일고 — Gemini로 수업용 웹페이지 만들기</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script src="../config.js"></script>
 <style>
 :root {
     --bg: #fbf6ee;            /* 따뜻한 아이보리 */
@@ -404,7 +403,7 @@ pre.tree { background: var(--accent-soft); border-radius: 12px; padding: 0.8rem 
             </div>
         </div>
         <div class="hero-body"><div class="hero-main">
-        <div class="hero-badge">2026 AI·디지털 기반 교육혁신 거점학교 교원연수_조대부고 · 코딩 몰라도 따라갈 수 있어요</div>
+        <div class="hero-badge">2026 AI·디지털 기반 교육혁신 거점학교 교원연수_광주제일고 · 코딩 몰라도 따라갈 수 있어요</div>
         <h1 class="hero-title">오늘 할 일: 내 수업을 <span class="hero-accent">LINK</span>로 만들기</h1>
         <p class="hero-sub">Gemini에게 부탁하면 수업용 웹페이지가 나옵니다. 아래 탭을 <em>1번부터 순서대로</em> 누르면 됩니다.<br>연수가 끝난 뒤에도 <b>언제든 다시 와서</b> 새 수업 웹페이지를 만들 수 있어요. 📌 즐겨찾기 해 두세요!</p>
         <!-- ✏️ [사본 만들기] 연수 정보(날짜·장소·강사)는 아래 세 줄을 고치세요 -->
@@ -412,14 +411,14 @@ pre.tree { background: var(--accent-soft); border-radius: 12px; padding: 0.8rem 
             <span>📚 생성형 AI를 활용한 수업자료 제작 실습</span>
             <span>📅 1기 2026. 10. 21.(수) 15:40~18:30</span>
             <span>📅 2기 2026. 10. 24.(토) 9:30~12:20</span>
-            <span>📍 조선대학교부속고등학교</span>
+            <span>📍 광주제일고등학교 박종오실</span>
             <span>🧑‍🏫 조선대학교부속중학교 수학 교사 김효진</span>
         </div>
         </div>
         <aside class="hero-join" aria-label="연수 페이지 입장 QR">
             <div class="join-qr" id="heroQR"></div>
             <b>📱 휴대폰으로 들어오기</b>
-            <a class="join-url" id="heroUrl" href="https://math94-ai.github.io/26ilgo/">math94-ai.github.io/26ilgo</a><!-- 주소는 스크립트가 현재 페이지 주소로 자동 표시 -->
+            <a class="join-url" id="heroUrl" href="https://richee-pc.github.io/26AI_jeil/">richee-pc.github.io/26AI_jeil</a><!-- 주소는 스크립트가 현재 페이지 주소로 자동 표시 -->
             <div class="join-btns">
                 <button type="button" class="btn btn-main" onclick="openJoin()">📺 크게 띄우기</button>
             </div>
@@ -473,9 +472,9 @@ pre.tree { background: var(--accent-soft); border-radius: 12px; padding: 0.8rem 
             <div class="demo-qr" id="demoQR"></div>
             <div>
                 <span class="tag">퀴즈 게임 예시</span>
-                <h3 style="margin:0.35rem 0 0.3rem">🍁 우리 학교 조대부고 알아보기 퀴즈</h3>
+                <h3 style="margin:0.35rem 0 0.3rem">🍁 우리 학교 광주제일고 알아보기 퀴즈</h3>
                 <p class="muted-sm" style="margin:0 0 0.8rem">교훈·교목·교화·연혁으로 만든 10문항 퀴즈예요. 휴대폰 카메라로 QR을 찍어 직접 풀어 보세요. 오늘 이런 웹페이지를 만들어 갑니다!</p>
-                <a class="btn btn-main" href="../examples/jodaego-quiz.html" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block">▶ 예시 퀴즈 열어 보기</a>
+                <a class="btn btn-main" href="../examples/jeil-quiz.html" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block">▶ 예시 퀴즈 열어 보기</a>
             </div>
         </div>
         <div class="card demo-card">
@@ -518,7 +517,7 @@ pre.tree { background: var(--accent-soft); border-radius: 12px; padding: 0.8rem 
                 <div><b>2. 학생이 할 일 정하기</b><p>"학생이 이 화면에서 <u>무엇을 누르고, 무엇을 생각하나?</u>"가 한 문장으로 말해지면 좋은 선택이에요.</p>
                     <p class="muted-sm">예) "원소 기호를 보고 이름을 고르며, 틀리면 해설을 읽는다."</p></div>
                 <div><b>3. 예시 화면 보고 고르기</b><p>카드를 누르면 <u>휴대폰 화면 예시</u>와 수업 장면, 만들 때 팁이 나와요.</p>
-                    <p class="muted-sm">🎯 퀴즈 게임에는 <b>조대부고 알아보기 퀴즈</b> 실제 예시가 있어요!</p></div>
+                    <p class="muted-sm">🎯 퀴즈 게임에는 <b>광주제일고 알아보기 퀴즈</b> 실제 예시가 있어요!</p></div>
             </div>
         </div>
         <div class="chips" id="catChips" style="margin-bottom:0.9rem"></div>
@@ -774,7 +773,7 @@ pre.tree { background: var(--accent-soft); border-radius: 12px; padding: 0.8rem 
                 <li>저장소의 <b>Settings → Pages</b> → Branch를 <code>main</code>, 폴더 <code>/ (root)</code>로 두고 <b>Save</b></li>
                 <li>1~2분 뒤 <code>https://아이디.github.io/저장소이름/</code> 주소 완성! → 5번 탭에서 QR 만들기</li>
             </ol>
-            <div class="tip" style="margin-bottom:0">💡 이 연수 웹페이지도 이 방법으로 공개했어요 → <a href="https://math94-ai.github.io/26ilgo/" target="_blank" rel="noopener">math94-ai.github.io/26ilgo</a>. 단원별 페이지를 더 올리려면 <code>quiz1.html</code>처럼 이름을 바꿔 올리고 주소 끝에 파일 이름을 붙이면 됩니다.</div>
+            <div class="tip" style="margin-bottom:0">💡 이 연수 웹페이지도 이 방법으로 공개했어요 → <a href="https://richee-pc.github.io/26AI_jeil/" target="_blank" rel="noopener">richee-pc.github.io/26AI_jeil</a>. 단원별 페이지를 더 올리려면 <code>quiz1.html</code>처럼 이름을 바꿔 올리고 주소 끝에 파일 이름을 붙이면 됩니다.</div>
         </div>
         <div class="section-head"><span></span>방법 2. GitHub + Streamlit — 파이썬 앱으로 배포하고 싶을 때</div>
         <div class="grid g2">
@@ -900,7 +899,7 @@ pre.tree { background: var(--accent-soft); border-radius: 12px; padding: 0.8rem 
     <p class="join-full-logo">LINKFORGE <small>for Teachers</small></p>
     <h2>휴대폰 카메라로 QR을 찍어 들어오세요 📱</h2>
     <div class="join-full-qr" id="joinFullQR"></div>
-    <p class="join-full-url" id="joinFullUrl">math94-ai.github.io/26ilgo</p>
+    <p class="join-full-url" id="joinFullUrl">richee-pc.github.io/26AI_jeil</p>
     <p class="muted-sm">Gemini로 수업용 웹페이지 만들기 · 2026학년도 AI중점학교 교원역량 강화 연수</p>
     <div class="join-btns" style="justify-content:center">
         <button type="button" class="btn btn-sub" onclick="closeJoin()">닫기 (Esc)</button>
@@ -1100,13 +1099,13 @@ grid.addEventListener('click', e => {
 // demo: 휴대폰 화면 모양으로 그릴 요소 목록 [종류, 내용…], scene: 수업 장면, tip: 만들 때 팁, live: 실제 예시 링크
 const PREVIEWS = {
     quiz: { scene: '도입 3분, 지난 시간 내용을 QR로 접속해 퀴즈로 복습해요. 틀린 문제는 집에서 다시 풀게 해요.', tip: '교과서 문제·정답·해설을 "꼭 넣을 학습 내용"에 붙여 넣으면 정확도가 가장 높아요.',
-        live: '../examples/jodaego-quiz.html',
+        live: '../examples/jeil-quiz.html',
         demo: [['h', '원소 기호 퀴즈'], ['top', '3 / 10', '점수 2'], ['bar', 30], ['q', 'H는 어떤 원소일까요?'], ['opts', ['수소', '헬륨', '산소', '탄소'], 0, 1], ['fb', '✔ 정답! H는 수소(Hydrogen)예요.'], ['btn', '다음 문제 →']] },
     ox: { scene: '수업 시작 전 오개념 점검! 결과를 보고 오늘 어디에 힘을 줄지 정해요.', tip: '헷갈리기 쉬운 문장을 O/X로 만들면 토론거리가 생겨요.',
         demo: [['h', 'OX 스피드 퀴즈'], ['top', '⏱ 00:07', '🔥 콤보 3'], ['q', '공기는 질량이 없다.'], ['ox'], ['fb', '✖ 공기도 질량이 있어요! 풍선 실험을 떠올려 봐요.']] },
     battle: { scene: '단원 마무리 10분, 교실 TV에 띄우고 모둠(팀)끼리 번갈아 맞히며 대결해요. 틀리면 상대 팀이 뺏을 수 있어 끝까지 집중해요.',
         tip: '한 화면 팀 대전은 Gemini Canvas로 바로 만들 수 있어요. 각자 휴대폰으로 하는 "실시간 대결"은 점수를 모을 서버가 필요해서, 예시처럼 구글 시트(Apps Script)를 연결해야 해요.',
-        live: '../examples/jodaego-quiz.html',
+        live: '../examples/jeil-quiz.html',
         demo: [['h', '⚔️ 팀 대전 퀴즈'], ['vs', '🍁 단풍팀 · 차례!', '300', '🍂 은행팀', '250'], ['q', '교훈 "숭미"의 뜻은?'], ['opts', ['참되게', '새롭게', '부지런하게', '아름답게'], 3], ['fb', '🔥 틀리면 은행팀이 뺏을 기회!']] },
     blank: { scene: '개념 설명 직후 핵심 문장을 스스로 채워 보며 정리해요.', tip: '빈칸 정답을 [ ]로 표시한 문장을 붙여 넣으면 그대로 만들어 줘요.',
         demo: [['h', '빈칸 채우기'], ['blank', '물은 [수소]와 [산소]로 이루어진 화합물이다.'], ['chips', ['수소', '산소', '질소', '탄소']], ['btn', '채점하기']] },
@@ -1657,10 +1656,10 @@ document.getElementById('adminGrid').addEventListener('click', e => {
 renderAdmin();
 
 // ---------- 작품 갤러리 (Google Apps Script 웹 앱에 저장) ----------
-// ✏️ 구글 시트 연결: materials/gallery_apps_script.gs 를 내 구글 시트에 배포한 뒤
-//    웹 앱 URL(…/exec)을 저장소 맨 위 config.js 의 LINKFORGE_API 에 넣으세요. 비워 두면 갤러리는 '준비 중'으로 보여요.
-const MY_GALLERY_API = String(window.LINKFORGE_API || '').trim();
-const GALLERY_BOARD = 'jodaego'; // 시트의 '게시판' 열에 jodaego 로 저장
+// ✏️ [사본 만들기] 내 갤러리를 쓰려면 materials/gallery_apps_script.gs 를 내 구글 시트에 배포한 뒤
+//    웹 앱 URL(…/exec)을 MY_GALLERY_API 에 넣으세요. 비워 두면 갤러리는 '준비 중'으로 보여요.
+const MY_GALLERY_API = 'https://script.google.com/macros/s/AKfycbxokum72etBCOe8i1dDm-gwF5sqGV0ju_HOboKZm6lWtUiaEt9znFxXNJ-QU02a3FzB/exec';
+const GALLERY_BOARD = 'jeil'; // 원본 갤러리와 섞이지 않도록 게시판 구분
 // 원본(richee-pc.github.io/26AI_design)에서만 원작자의 갤러리를 쓴다. 사본이 원작자 시트에 글을 올리지 않도록
 const IS_ORIGINAL_SITE = location.hostname === 'richee-pc.github.io' && location.pathname.startsWith('/26AI_design/');
 const GALLERY_API = MY_GALLERY_API || (IS_ORIGINAL_SITE ? 'https://script.google.com/macros/s/AKfycbxokum72etBCOe8i1dDm-gwF5sqGV0ju_HOboKZm6lWtUiaEt9znFxXNJ-QU02a3FzB/exec' : '');
@@ -1781,7 +1780,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.
 (function () {
     const box = document.getElementById('demoQR');
     if (!box || !window.QRCode) return;
-    new QRCode(box, { text: new URL('../examples/jodaego-quiz.html', location.href).href, width: 132, height: 132, correctLevel: QRCode.CorrectLevel.M });
+    new QRCode(box, { text: new URL('../examples/jeil-quiz.html', location.href).href, width: 132, height: 132, correctLevel: QRCode.CorrectLevel.M });
     const box2 = document.getElementById('demoQR2');
     if (box2) new QRCode(box2, { text: new URL('../examples/ai-quiz.html', location.href).href, width: 132, height: 132, correctLevel: QRCode.CorrectLevel.M });
 })();

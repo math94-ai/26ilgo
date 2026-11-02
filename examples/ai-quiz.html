@@ -6,7 +6,6 @@
 <title>인공지능 기초 퀴즈 🤖</title>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script src="../config.js"></script>
 <style>
 /* 수업용 웹페이지 예시: 혼자 풀기 · 팀 대전(한 화면) · 실시간 대결(각자 휴대폰) */
 :root {
@@ -226,9 +225,9 @@ h2 { font-size: 1.2rem; margin: 0 0 0.6rem; }
 
 <script>
 // 실시간 대결 점수판 주소 (연수 웹페이지의 작품 갤러리와 같은 Apps Script 웹 앱)
-// ✏️ 점수판 주소는 저장소 맨 위 config.js 의 LINKFORGE_API 를 함께 써요.
+// ✏️ [사본 만들기] 내 점수판을 쓰려면 내 Apps Script 웹 앱 URL을 MY_API 에 넣으세요.
 //    비워 두면 '실시간 대결'만 꺼지고, 혼자 풀기·팀 대전은 그대로 쓸 수 있어요.
-const MY_API = String(window.LINKFORGE_API || '').trim();
+const MY_API = 'https://script.google.com/macros/s/AKfycbxokum72etBCOe8i1dDm-gwF5sqGV0ju_HOboKZm6lWtUiaEt9znFxXNJ-QU02a3FzB/exec';
 const IS_ORIGINAL_SITE = location.hostname === 'richee-pc.github.io' && location.pathname.startsWith('/26AI_design/');
 const API = MY_API || (IS_ORIGINAL_SITE ? 'https://script.google.com/macros/s/AKfycbxokum72etBCOe8i1dDm-gwF5sqGV0ju_HOboKZm6lWtUiaEt9znFxXNJ-QU02a3FzB/exec' : '');
 const LIVE_SECONDS = 15;
